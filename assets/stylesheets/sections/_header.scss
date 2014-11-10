@@ -1,0 +1,111 @@
+
+#Header {
+	border-top: 1px solid black;
+
+	.mw_header_bottom {
+		width: auto;
+		display: block;
+		@include background(linear-gradient(top, #852201, #6a1b00));
+		padding: 5px;
+
+		.mw_search {
+		  display: inline-block;
+		  width: 75%;
+		  position: relative;
+		  input[type='text']{
+		    border: 1px solid black;
+		    background-color: #f1f0f0;
+		    font-size: 13px;
+		    padding: 4px;
+		    height: 23px;
+		    margin: 0;
+		    width: 100%;
+		    display: block;
+		  }
+
+		  .mw_search_btn {
+		    height: 33px;
+		    position: absolute;
+		    top: 0;
+		    right: -13px;
+
+		    input {
+		    	width: 40px;
+		    }
+		  }
+		}
+
+		.mw_menu_btn {
+		  float: right;
+		  display: block;
+		  &[data-ur-state="enabled"] span {
+		    @extend .sprites-menu-on;
+		  }
+		}
+	}
+}
+
+#TopMenu {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0 5px 10px;
+
+	ul {
+		float: right;
+	}
+
+	li {
+		float: right;
+		padding: 0 10px;
+	}
+
+	.position-right {
+		float: right;
+	}
+}
+
+#Logo {
+	@include background(linear-gradient(#C14102 0, shade(#C14102, 20%) 100%));
+	
+	h1 {
+		margin: 0;
+		padding: 10px;
+
+		a {
+			font-size: 22px;
+			text-shadow: 0 -1px rgba(0,0,0,0.9);
+			color: white;
+		}
+	}
+}
+
+#Menu {
+	h2 {
+		background: $header;
+		color: $color4;
+		margin: 0;
+		padding: 5px;
+	}
+
+	li {
+		background: $color6;
+		padding: 10px;
+		border-bottom: $border1;
+		font-size: 14px;
+		color: $color3;
+
+		a{	
+			color: $color3;
+		}
+	}
+}
+
+.mw_menu_btn {
+	cursor: pointer;
+}
+
+
+#AjaxLoading {
+	display: none;
+}

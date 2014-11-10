@@ -1,0 +1,116 @@
+.mw_category {
+	h2 {
+		text-align: left;
+	}
+
+	.Left,
+	.Content {
+		padding: 5px;
+		width: auto;
+	}
+
+	.ProductList {
+		li {
+			border: 1px solid #eee;
+			float: none;
+			width: auto !important;
+			background: #eee;
+			height: 123px !important;
+			min-height: 123px;
+			overflow: hidden;
+			margin: 10px 0;
+		}
+
+		.ProductImage {
+			float: left;
+			width: 100px;
+			height: 100px;
+			margin-right: 10px;
+		}
+
+		.ProductDetails {
+			height: auto !important;
+
+			a {
+				font-size: 12px;
+				word-wrap: break-word;
+			}
+		}
+
+		.ProductPriceRating {
+			color: #ff0000;
+			font-size: 12px;
+		}
+
+		.ProductActionAdd {
+			width: 150px;
+		}
+	}
+
+	.ShopByPrice,
+	#CategoryHeading {
+		border: 0 none;
+		border-radius: 2px 2px 2px 2px;
+		color: $color4;
+		cursor: pointer;
+		display: inline-block;
+		font-family: Arial,sans-serif;
+		font-size: 8px;
+		font-weight: bold;
+		line-height: 15px;
+		margin: 10px 0;
+		padding: 5px 0;
+		text-transform: none;
+		transition: all 0.3s ease 0s;
+		-moz-transition: all 0.3s ease 0s;
+		-webkit-transition: all 0.3s ease 0s;
+		width: 100%;
+		background: none repeat scroll 0 0 #666;
+	}
+
+	#CategoryHeading {
+		font-size: 12px;
+		margin: 0;
+		cursor: pointer;
+
+		.BlockContent {
+			padding: 5px;
+		}
+	}
+
+	.ShopByPrice {
+		h2 {
+			margin: 5px;
+		}
+
+		li {
+			color: #000;
+			border-top: 1px solid #222;
+			text-align: left;
+
+			a {
+				color: #000;
+				padding: 5px;
+				line-height: 15px
+			}
+		}
+	}
+
+	.SortBox {
+		cursor: default;
+	}
+
+	.SubCategoryList {
+		margin: 10px 0;
+
+		li {
+			color: $color6;
+			border-top: 1px solid #222;
+			padding: 10px 0;
+
+			a {
+				color: $color6;
+			}
+		}
+	}
+}

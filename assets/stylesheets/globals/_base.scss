@@ -1,0 +1,134 @@
+// Site-wide styles go here
+// What shouldn't go here
+//   - global declarative classes, mixins, or variables, that goes in _lib.scss
+ 
+body {
+  font-family: $font_family;
+  font-size: $font_size;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+h2{
+  margin: 5px 0 10px;
+}
+p {
+  font-size: $font_size;
+}
+ 
+textarea, input[type="text"], input[type="password"], select {
+  @include border-radius(3px);
+  border: $border2;
+  padding: 8px;
+  vertical-align: middle;
+  margin: 0px 5px;
+}
+a {
+  text-decoration: none;
+  color: $color5;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+hr {
+  margin: 10px 0;
+  padding: 0;
+  background: $color6;
+  height: 1px;
+  border: 0;
+}
+
+[data-ur-toggler-component="content"] {
+  display: none;
+  &[data-ur-state="enabled"] {
+    display: block;
+  }
+}
+
+.Block {
+	clear: both;
+}
+
+h2 {
+	text-align: center;
+}
+
+.ProductList {
+	li {
+		list-style: none;
+		float: left;
+		width: 122px;
+		font-size: 0.95em;
+		margin: 6px 6px 6px 7px;
+		padding: 8px;
+		overflow: hidden;
+		min-height: 17em;
+		width: 122px;
+		height: 204px;
+		border: 1px solid $color6;
+
+		.ProductImage {
+			height: 120px;
+			width: 120px;
+			background: #fff;
+			margin: 0 0 5px 0;
+			display: block;
+			width: 120px;
+			height: 120px;
+			text-align: center;
+			overflow: hidden;
+
+			img {
+				width: 100%;
+				height: 100%;
+
+			}
+		}
+	}
+
+	 em,
+	 .Rating {
+		display: block;
+	}
+}
+
+.ProductActionAdd {
+	a {
+		color: $color4;
+	}
+
+	border: 0 none;
+	border-radius: 2px 2px 2px 2px;
+	color: $color2;
+	cursor: pointer;
+	display: inline-block;
+	font-family: Arial,sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 20px;
+	margin-bottom: 0;
+	margin-top: 10px;
+	padding: 7px 10px;
+	text-transform: none;
+	transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	width: 84%;
+	text-align: center; /* DELETE WHEN WIDTH AUTO */
+	background: none repeat scroll 0 0 $button;
+
+	&:hover {
+      background: none repeat scroll 0 0 $light;
+      color: $color2;
+    }
+}

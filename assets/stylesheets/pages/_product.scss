@@ -1,0 +1,94 @@
+.mw_product {
+	.Left,
+	.Content {
+		padding: 5px;
+		width: auto;
+	}
+
+	.PrimaryProductDetails {
+		h2 {
+			text-align: left;
+		}
+	}
+
+	.ProductThumb {
+		width: 100% !important;
+		height: 100% !important;
+		background: $color6;
+
+		.ProductThumbImage {
+			margin: 0 auto;
+			width: 220px;
+			height: 220px;
+			height: 100% !important;
+
+			img {
+				margin: 10px;
+			}
+		}
+
+		.ImageCarouselBox {
+			width: 100% !important;
+			height: 100% !important;
+			padding-left: 0 !important; 
+
+			.ProductTinyImageList {
+				margin: 0 auto 5px;
+			}
+		}
+	}
+
+	.ProductMain {
+		background: #ADD8E6;
+		padding: 10px;
+		margin: 5px 0;
+	}
+
+	.DetailRow {
+		overflow: hidden;
+		padding: 5px;
+
+		.Label,
+		.Value {
+			float: left;
+		}
+	}
+
+	.ProductList {
+		li {
+			border: 1px solid #eee;
+			float: none;
+			width: auto !important;
+			background: #eee;
+			height: 123px !important;
+			min-height: 123px;
+			overflow: hidden;
+			margin: 10px 0;
+		}
+
+		.ProductImage {
+			float: left;
+			width: 100px;
+			height: 100px;
+			margin-right: 10px;
+		}
+
+		.ProductDetails {
+			height: auto !important;
+
+			a {
+				font-size: 12px;
+				word-wrap: break-word;
+			}
+		}
+
+		.ProductPriceRating {
+			color: #ff0000;
+			font-size: 12px;
+		}
+
+		.ProductActionAdd {
+			width: 150px;
+		}
+	}
+}
